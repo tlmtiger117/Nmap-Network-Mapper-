@@ -78,4 +78,4 @@
     - filtered = "não tenho informação convincento sobre o host porta. vou assumir como filtered(pode ou não ter algo)".
 
 - [!] Meu projeto de montar uma sub-rede terminou. Se quiser dar uma olhada, o link é este aqui:
-      https://github.com/tlmtiger117/docs/blob/main/Fluxo_da_Sub_Rede.md
+      https://github.com/tlmtiger117/Projetos/blob/main/Projeto-Sub_Redes.txt
