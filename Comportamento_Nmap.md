@@ -17,21 +17,20 @@ Analisando Comportamento Nmap
   - Telnet(SERVER): Recebe um pedido(SYN), aceita o pedido (SYN-ACK) e o cliente confirma a conexão(ACK).
      - Após o estabelecer conexão o FTP retorna "response"(reposta) ao cliente, mandando a versão do serviço FTP.
        
-  - [!] Fingersprint: técnica de descoberta de versões de serviços. Scanners normalmente chegam nessa fase e resetam
-         a conexão(RST).
+     - [!] Fingersprint: técnica de descoberta de versões de serviços. Scanners normalmente chegam nessa fase e resetam
+            a conexão(RST).
 
   - Nmap: Faz toda a parte de iniciar uma conexão, mas na hora de confirmar(ACK final), ele manda um RST, encerrando
           imediatamente a conexão com o servidor FTP(-sS).
 
-  - [!] O Nmap manda pacotes com tamanhos idênticos, Isso pode ser usado por ADMs de rede para detectar comportamentos
-          conhecidos de scanners de rede(pois a maioria dos scanners que existem, se inspiram no Nmap).
+     - [!] O Nmap manda pacotes com tamanhos idênticos, Isso pode ser usado por ADMs de rede para detectar comportamentos
+             conhecidos de scanners de rede(pois a maioria dos scanners que existem, se inspiram no Nmap).
 
   - Wireshark: Tem total visão da rede(em tempo real) de tudo que acontece. Ele que observou esses comportamentos do
-               Telnet e do Nmap. Como todo comportamento numa rede pode ser detectado, ele desempenha o papel da
-               "análise ativa", sempre buscando comportamentos fora do padrão.
+                Telnet e do Nmap. Como todo comportamento numa rede pode ser detectado, ele desempenha o papel da
+                "análise ativa", sempre buscando comportamentos fora do padrão.
 
-  - [!] Aviso, essas ferramentas não funcionam sozinhas. Elas podem ser utilizadas tanto para proteger quanto para atacar
-        (pentest autorizado ou cibercriminoso), por isso, sempre use esse conhecimento para o bem dos outros,
-        Nunca para prejudicar alguém.
+     - [!] Aviso, essas ferramentas não funcionam sozinhas. Elas podem ser utilizadas tanto para proteger quanto para atacar
+            (pentest autorizado ou cibercriminoso), por isso, sempre use esse conhecimento para o bem dos outros, Nunca para                 prejudicar alguém.
 
 
