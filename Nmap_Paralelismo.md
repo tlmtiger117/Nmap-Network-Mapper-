@@ -1,7 +1,7 @@
 # 04/03/26
 # Paralelismo Nmap(Conexões e Probes simultâneas)
 
-# Nmap(Network-Mapper): Scanner de rede utilizado para descoberta de host,SO,portas,serviços e firewalls.
+- Nmap(Network-Mapper): Scanner de rede utilizado para descoberta de host,SO,portas,serviços e firewalls.
 
 - O que é paralellismo:Paralelismo nada mais é do que 2 ou mais coisas acontecendo ao mesmo tempo(nesse contexto, os scans)
 
