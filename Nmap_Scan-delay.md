@@ -15,8 +15,8 @@
      
    - Utilizada Diminuir a velocidade entre cada conexão/Probe, dificultado correlacionar um scan a um comportamento suspeito.
      
-   - Se combinados com outras opções como --max-parallelism(como já mostrei antes), fica ainda mais difícil diferenciar
-      scan de comportamento padrão
+   - Se combinar-mos com outras opções como --max-parallelism(como já mostrei antes), fica ainda mais difícil diferenciar
+      comportamento padrão de scan.
      
    - [link para meu estuo de paralelismo]: https://github.com/tlmtiger117/Nmap-Network-Mapper-/blob/main/Nmap_Paralelismo.md
      
