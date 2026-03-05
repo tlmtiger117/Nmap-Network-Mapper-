@@ -31,4 +31,6 @@
 
 - [Dica]: Percebi que pode ser interessante indetificas as camadas onde cada tipo de scan atua(modelo OSI) pra entender
            onde o scan começa e onde ele deve terminar(isso ajuda a entender onde você está errando).
+
+
   
