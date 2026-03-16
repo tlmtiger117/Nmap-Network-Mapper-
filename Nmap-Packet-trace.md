@@ -23,6 +23,11 @@
    - MSS(Maximum Segment Size): Partes expecíficas do pacote TCP(Flags,Portas,mss,window,payload,id...)
      
    - win/window: Máximo de tamanho de dados que o host pode receber durante a comunicação(antes e depois de um ACK).
+ 
+   - seq: número que identifica a posição dos dados na conexão TCP
+      - Ordena os pacotes(entrega na ordem certa)
+      - Detecta perdas(algum MSS do pacote)
+      - retransmitir dados corretamente(mandou, não respondeu, mandou de novo)
      
    - id: Endereço do pacote IP(PROTO-IP). Responsável por reconstruir pacotes de envio Fragmentados(ou ao menos, saber de quem é).
      
