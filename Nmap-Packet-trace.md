@@ -31,7 +31,7 @@
    - [?] Header: Dados princiapis do pacote(quem envia,recebe,estado do pacote,ttl(IP),Flags,payload,porta(no TCP)...
 
      
-- Outras flags do Nmap que eu achei interessnate aqui nesse outro arquivo:
+- Outras flags do Nmap que eu achei interessante aqui nesse outro arquivo:
    - [https://github.com/tlmtiger117/Ideias/blob/main/Flags_Nmap.md]
  
 
