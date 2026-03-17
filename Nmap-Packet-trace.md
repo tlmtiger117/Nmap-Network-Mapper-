@@ -1,10 +1,10 @@
 # 16/03/26
 # --Packet-Trace
 
-- O que é: É uma flag do Nmap onde sua funçaõ é basicamente mostrar todo tráfego geredo pela ferramenta. Isso inclui:
+- O que é: É uma flag do Nmap onde sua função é basicamente mostrar todo tráfego geredo pela ferramenta. Isso inclui:
 
   
-- Seu diferencial: Essa flag é tipo um "scannifer interno" do Nmap, pois mostra TODOS os pacotes enviados e recebidos
+- Seu diferencial: Essa flag é tipo um "snnifer interno" do Nmap, pois mostra TODOS os pacotes enviados e recebidos
                    durante a execução da tool com alguns detalhes adcionais relacionados ao scanner.
   
 
