@@ -62,12 +62,19 @@
                 - isso pode significar que pode ter algo no host ou porta, mas não tem nada confirmando isso.
                   É como se fosse um "cara... não tenho certeza de que tem algo aí. pode ter ou não ter nada".
      
-   - [!] (tcpwrapped) adcional: aparece quando o Nmap estaberlece conmexão com o host, ams naõ concegue pegar o banner
-                                do serviço (no -sV).
+   - [!] (tcpwrapped) adcional: aparece quando o Nmap estaberlece conmexão com o host, mas não concegue pegar o banner
+                                do serviço a tempo (no -sV e em scripts de detecção).
   
       - Isso ocorre por regras de firewall avançadas
       - IDS ou IPS negando entrega de banner (manda RST antes do nmap pegar o banner)
-         - [!] pode ser burlado usando "--scrip=*discovery*" do nmap (scan de serviço agressivo e detectável).
+        
+         - [!] pode ser burlado usando detecções mais agressiva do nmap (mandando mais probes, assim tento mais chances de alguma
+               passar e pegar a versão dos serviço), como no caso de "scripts de discovery".
+         
+           
+            - sempre combinar -sV e scripts quando não se recebe uma respota do serviço(forçar respotas mandando mais probes).
+              
+         - [!] mais fácil de detectar, por justamente ter mais tentativas/pacotes an rede.
      
       - Resumo: O Nmap tentou receber uma resposta da host/porta, mas por algo estar bloquando a comunicação ou o nmap
                 não recebeu respostas convincentes, ele assume com filtered:
