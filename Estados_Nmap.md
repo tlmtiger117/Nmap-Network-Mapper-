@@ -62,6 +62,13 @@
                 - isso pode significar que pode ter algo no host ou porta, mas não tem nada confirmando isso.
                   É como se fosse um "cara... não tenho certeza de que tem algo aí. pode ter ou não ter nada".
      
+   - [!] (tcpwrapped) adcional: aparece quando o Nmap estaberlece conmexão com o host, ams naõ concegue pegar o banner
+                                do serviço (no -sV).
+  
+      - Isso ocorre por regras de firewall avançadas
+      - IDS ou IPS negando entrega de banner (manda RST antes do nmap pegar o banner)
+         - [!] pode ser burlado usando "--scrip=*discovery*" do nmap (scan de serviço agressivo e detectável).
+     
       - Resumo: O Nmap tentou receber uma resposta da host/porta, mas por algo estar bloquando a comunicação ou o nmap
                 não recebeu respostas convincentes, ele assume com filtered:
                 "não recebi uma resposta convincente do servidor alvo. não vou assumir estado algum, pois pode ter algo,
