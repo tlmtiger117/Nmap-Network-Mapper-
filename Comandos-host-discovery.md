@@ -4,7 +4,26 @@
 - Host-Discovery: Técnica de enviar probes (pacotes de testes) para receber alguma reação que prove que o host está ativo.
    - Essa técnica não é "port-scanning"(não manda pacotes para portas), mas sim para a tabela tcp do host (lida com conexões).
 
-- 📡 Host-Discovery (Descoberta de hosts/dispositivos).
+- Fases de scan do Nmap: O Nmap utiliza pacotes específicos apra cada parte do scan (host,portas,serviços,firewall.SO)
+   - O fluxo seria assim:
+     
+      - 1° Host-discovery: Manda pacotes específficos para testar a reação do host
+           (manda pacotes na porta para receber uma resposta do host)
+     
+      - 2° Port-Scanin: Manda pacotes específicos para a porta com a intenção de interpretar o estado dela
+                        (open, closed, filtered...)
+        
+      - 3° Service-Detection: Manda pacotes específicos para tentar descobrir a versão de um programa utilizado por um serviço
+                              na porta do host alvo (programa = quem interpreta os dados enviados e recebidos na comunicação).
+        
+      - 4° OS-Detection: Tenta descobrir o SO do alvo (útil quando se descobre um CVE, mas precisa ver se o SO bate com tipo
+                         da falha). falhas windows talvez não funcionem em falhas linux/unix.
+
+
+
+-  Host-Discovery (Descoberta de hosts/dispositivos).
+-  [!] Os comandos abaixo deve ser utilizados em ultimo caso, quando o host não reponde normalmente.
+  
    - nmap -PE alvo
       - ICMP Echo (ping tradicional) → verifica se o host responde a ping
         
@@ -41,6 +60,7 @@
           
      - nmap -PU53 alvo
         - UDP em DNS → comum gerar resposta mesmo com filtros
+
 
 
       
