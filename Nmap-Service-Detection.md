@@ -29,6 +29,6 @@
        - --script banner: "mando o pacote e pego o que o server me mandar espontânadmente".
          
 
-- [!] tem  outras opções, e elas então em: "/usr/share/nmap/scripts/" ou em algo nesse sentido(pode variar comforme distro/SO)
+- [!] tem  outras opções, e elas estão em: "/usr/share/nmap/scripts/" ou em algo nesse sentido(pode variar conforme a distro/SO)
 
 
