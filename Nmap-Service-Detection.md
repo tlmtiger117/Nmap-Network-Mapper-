@@ -6,7 +6,8 @@
 - -sV: Service-detection, utiliza probes específicas para descobrir versões de serviços.
        manda probes específicas para detecção de serviço até alguma revelar a versão dele
   
-   - Banner: cabeçalho, é onde mostra infos essenciais na tentativa de conexão no serviço (src,dst,sport,dport,payload...)
+   - Banner: cabeçalho, é onde mostra infos essenciais na tentativa de conexão no serviço
+      (src,dst,sport,dport,payload,versão do programa utilizado por um servido acessado...)
 
 - Flags auxiliares na detecção de serviço:
 - [!] "nmap-service-probes": o arquivo que fica na instalação do nmap que contem toda a base de probes utilizada pelo -sV
