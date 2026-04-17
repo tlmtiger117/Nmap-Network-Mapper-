@@ -26,8 +26,8 @@
     - 4° "--script banner": script focado em tenatr pegar o banner de serviços. não tenta comparar com o seu banco de probes
           inteligentes (-sV), mas sim, tenta pegar qualquer info que o serviço retorne para o scanner.
 
-       - -sV: probes inteligentes, amnda comforme o serviço scaneado(ssh = porbes ssh, ftp = porbes ftp...
-       - --script banner: "mando o pacote e pego o que o server me mandar espontânadmente".
+       - -sV: probes inteligentes, manda conforme o serviço scaneado(ssh = probes ssh, ftp = probes ftp...)
+       - --script banner: "mando o pacote e pego o que o server me mandar espontânamente".
          
 
 - [!] tem  outras opções, e elas estão em: "/usr/share/nmap/scripts/" ou em algo nesse sentido(pode variar conforme a distro/SO)
