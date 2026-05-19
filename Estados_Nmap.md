@@ -87,11 +87,11 @@
      
     - open = host ativo, porta acessível(tem serviço).
      
-    - closed = host ativo, porta inacessível(host ativo, ams sem serviço na porta)
+    - closed = host ativo, porta acessível e sem serviço aguardando conexão.
   
     - filtered = algo barrando a chegada de pacotes ao destino final(porta)
        - pode ser firewall,IPS,IDS,PROXY e tudo que possa bloquear algo
-         antes de chgar no alvo
+         antes de chgar no alvo.
 
     - unfiltered = não filtrado/barrado. não quer dizer que está aberto, só que algum
                    tipo de pacote foi aceito na ponto de acesso(porta).
