@@ -87,14 +87,14 @@
      
     - open = host ativo, porta acessível(tem serviço).
      
-    - closed = host ativo, porta acessível(ativo passa a sensação de estar aberto, o que
-               não é verdade).
+    - closed = host ativo, porta inacessível(host ativo, ams sem serviço na porta)
   
-    - filtered = "não tenho informação convincento sobre o host porta. vou assumir como
-                  filtered(pode ou não ter algo)".
+    - filtered = algo barrando a chegada de pacotes ao destino final(porta)
+       - pode ser firewall,IPS,IDS,PROXY e tudo que possa bloquear algo
+         antes de chgar no alvo
 
-    - unfiltered = não filtrado/barrado. não quer dizer que estpá aberto, só que algum
-                   tipo de pacote foi aceito na ponto de acesso(porta)
+    - unfiltered = não filtrado/barrado. não quer dizer que está aberto, só que algum
+                   tipo de pacote foi aceito na ponto de acesso(porta).
 
 - [!] Meu projeto de montar uma sub-rede terminou. Se quiser dar uma olhada, o link é este aqui:
       https://github.com/tlmtiger117/Projetos/blob/main/Projeto-Sub_Redes.txt
