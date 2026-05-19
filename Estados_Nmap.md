@@ -83,13 +83,18 @@
 
 - [dicas]: Sempre lembre disso:
   
-    - fluxo nmap: Internet -> Firewall -> Sistema Operacional -> Serviço.
+- fluxo nmap: nmap -> rede -> Firewall -> Sistema Operacional alvo -> Serviço alvo.
      
-    - open = host ativo, porta aberta(tem serviço).
+    - open = host ativo, porta acessível(tem serviço).
      
-    - closed = host ativo, porta acessível(ativo passa a sensação de estar aberto, o que não é verdade).
+    - closed = host ativo, porta acessível(ativo passa a sensação de estar aberto, o que
+               não é verdade).
   
-    - filtered = "não tenho informação convincento sobre o host porta. vou assumir como filtered(pode ou não ter algo)".
+    - filtered = "não tenho informação convincento sobre o host porta. vou assumir como
+                  filtered(pode ou não ter algo)".
+
+    - unfiltered = não filtrado/barrado. não quer dizer que estpá aberto, só que algum
+                   tipo de pacote foi aceito na ponto de acesso(porta)
 
 - [!] Meu projeto de montar uma sub-rede terminou. Se quiser dar uma olhada, o link é este aqui:
       https://github.com/tlmtiger117/Projetos/blob/main/Projeto-Sub_Redes.txt
